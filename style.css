@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+
+input {
+    outline: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    padding: 96px 98px 514px;
+}
+
+/* Custom input username */
+.custom-input {
+    max-width: 564px;
+    width: 100%;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.custom-input .username {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+    font-weight: 600;
+    margin-bottom: 8px;
+    user-select: none;
+}
+
+.custom-input .input-wrap {
+    max-width: 564px;
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    padding: 16px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+    linear-gradient(0deg, #CCCCCC, #CCCCCC);
+    border: 1px solid #CCCCCC;
+    position: relative;
+}
+
+.custom-input .input-wrap:hover {
+    border: 2px solid #7A5CFA;
+}
+
+.custom-input .input-wrap .input {
+    position: absolute;
+    max-width: 532px;
+    width: 100%;
+    height: 24px;
+    border: none;
+}
+
+.custom-input .input-wrap .input::placeholder {
+    line-height: 24px;
+    color:  #666666;
+    transition: all 200ms ease-in-out ;
+}
+
+.custom-input .input-wrap .input:focus {
+    cursor: text;
+    outline: none;
+}
+
+/* Custom input password */
+
+.custom-input.wrap {
+    max-width: 564px;
+    width: 100%;
+    Gap: 8px;
+    height: 108px;
+}
+
+.custom-input.wrap .password {
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 8px;
+    user-select: none;
+}
+
+.input-label {
+    max-width: 564px;
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    padding: 16px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+    linear-gradient(0deg, #CCCCCC, #CCCCCC);
+    border: 1px solid #CCCCCC;
+    position: relative;
+}
+
+.wrap .input-label:hover {
+    border: 2px solid #7A5CFA
+}
+
+.custom-input.wrap .input-label .input.password-input {
+    max-width: 532px;
+    width: 100%;
+    height: 24px;
+    border: none;
+}
+
+.custom-input.wrap .input-label .input.password-input:focus {
+    outline: none;
+}
+
+
+.custom-input.wrap .input-label .input.password-input:focus {
+    cursor: text;
+    border: none;
+}
+
+.custom-input.wrap .input-label .input.password-input::placeholder {
+    transition: all 200ms ease-in-out;
+}
+
+.wrap .password-info {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+}
+
+/* Custom checkbox */
+.custom-checkbox-wrap {
+    max-width: 564px;
+    width: 100%;
+    height: 24px;
+    margin-bottom: 32px;
+}
+
+.custom-checkbox-wrap .remember-label {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox-wrap .remember-label .remember-checkbox {
+    display: none;
+}
+
+.custom-checkbox-wrap .remember-label .checkmark {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.custom-checkbox-wrap .remember-label .remember-checkbox:checked {
+    display: none;
+  }
+
+.custom-checkbox-wrap .remember-label .remember-checkbox:checked ~ .checkmark {
+    display: block;
+    background: #FFFFFF url('./img/Vector.svg') center center/contain no-repeat;
+}
+
+/* Custom Toggle */
+.toggle-wrap {
+    max-width: 564px;
+    width: 100%;
+    height: 24px;
+    display: flex;
+    margin-bottom: 32px;
+    display: flex;
+}
+
+.on,
+.off {
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+
+.toggle-state-on {
+   display: none; 
+}
+
+.toggle-checkbox:checked ~ .toggle-state-off.off {
+    display: none;
+}
+
+.toggle-checkbox:checked ~ .toggle-state-on.on {
+    display: block;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    position: relative;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 32px;
+    height: 24px;
+    width: 49px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 49px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked ~ .slider {
+    background: linear-gradient(0deg, #7A5CFA, #7A5CFA),
+    linear-gradient(0deg, #CCCCCC, #CCCCCC);
+    border: 1px solid #CCCCCC
+ }
+  
+  input:focus ~ .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked ~ .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+  }
+
+  /*  Custom Radio Buttons  */
+.radio-buttons-wrap {
+    margin-top: 32px;
+    max-width: 564px;
+    width: 100%;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-buttons-wrap .radio-button {
+    margin-bottom:  32px;
+    display: flex;
+    align-items: center;
+}
+
+.radio-buttons-wrap .radio-button .radio-btn {
+    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 32px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+    linear-gradient(0deg, #CCCCCC, #CCCCCC);
+    border: 1px solid #CCCCCC
+}
+
+/* Custom buttons */
+.btn-wrap {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 564px;
+    width: 100%;
+    height: 56px;
+
+}
+
+.btn-wrap .input-btn {
+    width: 172px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 16px;
+    Gap: 10px;
+    color: #7A5CFA;
+    border: 1px solid #7A5CFA;
+    text-align: center;
+    background-color: white;
+}
+
+.btn-wrap .btn-reset {
+    width: 172px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 16px;
+    Gap: 10px;
+    background: #7A5CFA;
+    color: #FFFFFF;
+    text-align: center;
+}

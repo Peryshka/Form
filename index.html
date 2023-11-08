@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@700&family=Nanum+Gothic:wght@800&family=Noto+Sans&family=Oxygen:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="page-wrap">
+        <div class="container">
+            <form>
+                <!----Custon input username----->
+                <div class="custom-input">
+                    <span class="username">Username</span>
+                    <label for="username" class="input-wrap">
+                        <input type="text" class="input" placeholder="Enter username" id="username">
+                    </label>
+                </div>
+                <!----Custom input password---->
+                <div class="custom-input wrap">
+                    <span class="password">Password</span>
+                    <label for="password" class="input-label">
+                        <input type="password" class="input password-input" placeholder="Enter password" id="password">
+                    </label>
+                    <span class="password-info">
+                        Your password is between 4 and 12 characters
+                    </span>
+                </div>
+                <!---Custom input checkbox----->
+                <div class="custom-checkbox-wrap">
+                    <label class="remember-label">
+                        <input type="checkbox" class="remember-checkbox">
+                        <i class="checkmark"></i>
+                        <span class="checkbox-text">
+                            Remember me
+                        </span>
+                    </label>
+                </div>
+                <!----Custom toggle------>
+                <div class="toggle-wrap">
+                    <label class="switch">
+                        <span class="toggle-state-off off">Off</span>
+                        <span class="toggle-state-on on">On</span>
+                        <input type="checkbox" class="toggle-checkbox">
+                        <span class="slider round"></span>
+                        
+                      </label>
+                    </label>
+                </div>
+                <!-----Custom radio buttons ---->
+                <div class="radio-buttons-wrap">
+                    <label for="radioBtn-1" class="radio-button">
+                        <input type="radio" class="radio-btn"  id="radioBtn-1" name="selectRadio">
+                        Radio Selection 1
+                        <i class="radiomark"></i>
+                    </label>
+                    <label for="radioBtn-2" class="radio-button">
+                        <input type="radio" class="radio-btn" id="radioBtn-2" name="selectRadio">
+                        Radio Selection 2
+                        <i class="radiomark"></i>
+                    </label>
+                    <label for="radioBtn-3" class="radio-button">
+                        <input type="radio" class="radio-btn" id="radioBtn-3" name="selectRadio">
+                        Radio Selection 3
+                        <i class="radiomark"></i>
+                    </label>
+                </div>
+                <!--------Custom input buttons -------->
+                <div class="btn-wrap">
+                    <input type="reset" class="input-btn" value="Cancel">
+                    <input type="button" value="Next" class="btn-reset">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
